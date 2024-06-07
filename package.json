@@ -1,0 +1,24 @@
+{
+  "name": "arulreact",
+  "version": "1.0.0",
+  "description": "React Course pbl",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArulJyothi1302/Namaste-React.git"
+  },
+  "keywords": [
+    "React",
+    "Arul",
+    "React-Application"
+  ],
+  "author": "Arul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArulJyothi1302/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/ArulJyothi1302/Namaste-React#readme"
+}
