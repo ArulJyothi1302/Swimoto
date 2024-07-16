@@ -23,8 +23,11 @@
   },
   "homepage": "https://github.com/ArulJyothi1302/Namaste-React#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
     "parcel": "^2.12.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.39",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.4"
   },
   "dependencies": {
     "react": "^18.3.1",
