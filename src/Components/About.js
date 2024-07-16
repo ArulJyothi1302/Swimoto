@@ -12,13 +12,13 @@ class About extends React.Component{
     render(){
         console.log("Parent render");
     return(
-        <div>
-            <h3>
+        <div className="flex flex-col justify-center items-center p-4 m-4">
+            <h3 className="font-bold">
                 About Us!
             </h3>
-            <h2>Fast Delivering Food App</h2>
+            <h2 className="m-4">Fast Delivering Food App</h2>
             <User name="Arul" email="aruljyothi0202@gmail.com" location="Chennai" Contact="https://twitter.com/ArulJyothi13"/>
-            {/* <User name="Mike" email="mike@gmail.com" location="Chennai" Contact="https://twitter.com/ArulJyothi13"/> */}
+          
         </div>
     )
 }
