@@ -51,7 +51,7 @@ render(){
             <h3 className='p-2'>Email:<a className='text-blue-700' href={"mailto:"+email}target='_blank'>{email}</a></h3>
             <h3 className='p-2'>Location:{location}</h3>
             <p className='p-2'>Contact:<a className='text-blue-900' href={Contact}target='_blank'>Twitter</a></p>
-            <button className='px-3 py-1 rounded-lg  bg-gray-100' onClick={()=>{
+            <button className='px-3 py-1 rounded-lg  bg-gray-100 ease-in duration-300' onClick={()=>{
               this.setState({count:this.state.count+1})
             }}>Inc</button>
         </div>
