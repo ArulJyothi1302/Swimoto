@@ -1,40 +1,70 @@
 import Shimmer from "./Shimmer";
 import useResMenu from "../utils/useResMenu";
+import ResCategory from "./ResCategory";
+import { useState } from "react";
 
-const ResMenu=()=>{
-// data have been fetched in comp useResMenu see in utils (for clarifications)
-// const {resid}=useParams()
-    const resMenu = useResMenu();
-    if(resMenu===null) return <Shimmer /> 
+const ResMenu = () => {
+  // data have been fetched in comp useResMenu see in utils (for clarifications)
+  // const {resid}=useParams()
 
-    const {name,cuisines,costForTwoMessage,avgRating,totalRatingsString}=resMenu.cards[2].card.card.info;
-    
-    const {itemCards}=resMenu.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
-    console.log(itemCards)
+  const [item, setItem] = useState(null);
+  const resMenu = useResMenu();
+  // prop drilling
+  const dummy = "dummt data";
+  if (resMenu === null) return <Shimmer />;
 
-    return (
-        <div className="rest-menu">
-            <h1>{name}</h1>
-            <h3>{avgRating}{`(${totalRatingsString})`}</h3>
-            <h3>Cuisines</h3>
-            <p>{cuisines.join(", ")} - {costForTwoMessage}</p>
-            
-            {/* OVER VIEW */}
+  const { name, cuisines, costForTwoMessage, avgRating, totalRatingsString } =
+    resMenu.cards[2].card.card.info;
 
-            {/* DEALS */}
+  // const {itemCards}=resMenu.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
 
-            <h3><u>Menu</u></h3>
+  const category =
+    resMenu.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (c) =>
+        c.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+  // const over=()=>{
+  //     setCat(1);
+  // }
+  return (
+    <div className="rest-menu m-4 p-4">
+      <h1 className="font-bold text-center p-2">{name}</h1>
+      <h3 className="text-center p-2">
+        {avgRating}
+        {`(${totalRatingsString})`}
+      </h3>
+      <h3 className="text-center p-2">Cuisines</h3>
+      <p className="text-center p-2">
+        {cuisines.join(", ")} - {costForTwoMessage}
+      </p>
 
-            {/* toggle */}
+      {/* OVER VIEW */}
 
-            {/* carousel-top-picks */}
+      {/* DEALS */}
 
-            <h3>Recommended For You({itemCards.length})</h3>
-          
-            <ul>
-                {itemCards.map(items=><li key={items.card.info.id}>{items.card.info.name} <br/> Rs.-  {items.card.info.price/100 || items.card.info.defaultPrice/100}</li>)}
-                
-            </ul>
-        </div>)
-}
+      <h3 className="text-center p-2">
+        <u>Menu</u>
+      </h3>
+
+      {/* toggle */}
+
+      {/* carousel-top-picks */}
+
+      <div className=" p-4">
+        {category.map((c, index) => (
+          <ResCategory
+            key={c.card.card.title}
+            //Lifting the state up
+
+            showItems={index === item ? true : false}
+            setItem={() => setItem(index)}
+            data={c?.card?.card}
+            dummy={dummy}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 export default ResMenu;
