@@ -1,13 +1,17 @@
 import { useContext, useState } from "react";
-import { LOGO_URL } from "../utils/constants";
+import { CART_LOGO, LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlinestatus from "../utils/useOnlinestatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [sign, setSign] = useState("Login");
   const onlineStatus = useOnlinestatus();
   const { loggedInUser } = useContext(UserContext);
+
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
 
   return (
     <div className="header w-12/12 bg-green-500 sm:bg-yellow-100 lg:bg-blue-500 flex flex-wrap justify-between ">
@@ -34,9 +38,16 @@ const Header = () => {
             {" "}
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li className="px-4">
+          <li className="px-4 font-bold">
             {" "}
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">
+              <img
+                className="w-12 bg-slate-300 inline  rounded-xl"
+                src={CART_LOGO}
+                alt="cart"
+              ></img>{" "}
+              -{cartItems.length}
+            </Link>
           </li>
           <li className="px-4">
             <button
