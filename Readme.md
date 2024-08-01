@@ -25,8 +25,7 @@
 // // () is used because babel dosent know which to execute if there are more than one line of syntax
 // console.log(heading) -->
 
-
-<!-- 
+<!--
 // // Component in React ->Functional Component Class Component
 // const Title =()=> <h3>This is Title</h3>
 // const span =<span>With SAPN fom Js Element</span>
@@ -34,7 +33,7 @@
 //     <p1>This is the element in Javascript {span}
 //      <Title/>
 //     </p1>
-   
+
      -->
 <!-- // )
 
@@ -53,40 +52,73 @@
 //         {para}
 //     </div>)
 // } -->
-<!-- 
+<!--
 // const Main=()=> <Heading/>
 // const root = ReactDOM.createRoot(document.getElementById('root'))
 // root.render(<Main/>) -->
 
-
 <!-- //****************************************************************************************************************************** */
  --> -->
 
-
-
-<!--   
+<!--
             Header
             Body
                 *Search
                 *Restaurant Cards
                 *cards
-            Footer 
+            Footer
            -->
+
 # export default component
+
 # import component
+
 # export const list;
 
 # import {list};--> Named import
- #          # React Hooks
- #          (Normal js utility function)
-  #         -useState() - superPowerful state variable
-  #         -useEffect()
+
+# React Hooks
+
+# (Normal js utility function)
+
+# -useState() - superPowerful state variable
+
+# -useEffect()
+
+# React Routing
+
+- CreateBrowserRouter
+- RouterProvider
+- Outlet for path
+
+# Types of Routing
+
+- Clent side
+- Server side
 <!------------------------------------>
 
 # BUNDLING <!-- most important thing for large scale appliation>
+
 # 1. Chunking
+
 # 2. Code Splitting
+
 # 3. Dynamic Bundling
+
 # 4. Lazy Loading --> Loads the code in background in js when we visit the specific component in our app for better performance
+
 # on demand Loading
+
 # dynamic import
+
+# Redux
+
+# ReduxToolKit - (RTK)
+
+- Install rtk
+- intall @reduxjs/toolkit and react-redux
+- Build our Store
+- Connect our stire to app
+- Build our Slice (card slice)
+- dispatch (action)
+- Read the data using selector

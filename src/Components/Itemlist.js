@@ -1,7 +1,13 @@
 import { ITEM_URL } from "../utils/constants";
+import { addItems } from "../utils/cartSlice";
+import { useDispatch } from "react-redux";
 const ItemList = ({ items, dummy }) => {
   // Prop Drilled
   console.log(dummy);
+  const dispatch = useDispatch();
+  const handleAdd = (i) => {
+    dispatch(addItems(i));
+  };
   return (
     <div>
       {items.map((i) => (
@@ -25,7 +31,10 @@ const ItemList = ({ items, dummy }) => {
 
           <div className="lg:w-4/12 md:w-6/12  p-4">
             <div className="absolute mx-10">
-              <button className="p-2 m-2 bg-green-600 text-white  rounded-lg ">
+              <button
+                className="p-2 m-2 bg-green-600 text-white  rounded-lg "
+                onClick={() => handleAdd(i)}
+              >
                 ADD +
               </button>
             </div>
