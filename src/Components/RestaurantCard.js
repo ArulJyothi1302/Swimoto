@@ -21,8 +21,8 @@ const RestaurantCard = (props) => {
       />
       <div className="text-gray-600 py-2 px-2s">
         <h3 className="font-bold text-md">{name}</h3>
-
-        <h5>{cuisines.join(", ")}</h5>
+{console.log("cuis",cuisines.length)}
+        <h5>{cuisines.length<=3?(cuisines.join(", ")):(cuisines.slice(0,2).join(", ")+"...")}</h5>
         <h4>{avgRating}</h4>
         <h4>{costForTwo}</h4>
         <h4>{sla?.deliveryTime} Minutes</h4>

@@ -1,6 +1,7 @@
 import { ITEM_URL } from "../utils/constants";
 import { addItems } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
+import ImageFallback from "./ImageFallback";
 const ItemList = ({ items, dummy }) => {
   // Prop Drilled
   console.log(dummy);
@@ -38,7 +39,8 @@ const ItemList = ({ items, dummy }) => {
                 ADD +
               </button>
             </div>
-            <img
+
+            <ImageFallback
               src={ITEM_URL + i.card.info.imageId}
               alt="item"
               className="rounded-lg "
