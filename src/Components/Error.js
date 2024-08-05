@@ -1,5 +1,5 @@
 import { useRouteError } from "react-router-dom"
-import { NO_INT } from "../utils/constants";
+// import { NO_INT } from "../utils/constants";
 
 const Error =()=>{
     const err=useRouteError();
