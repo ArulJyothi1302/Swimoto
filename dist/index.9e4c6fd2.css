@@ -252,6 +252,10 @@ img, video {
   position: absolute;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .m-2 {
   margin: .5rem;
 }
@@ -264,10 +268,6 @@ img, video {
   margin: auto;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -276,6 +276,11 @@ img, video {
 .mx-3 {
   margin-left: .75rem;
   margin-right: .75rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto {
@@ -298,22 +303,8 @@ img, video {
   margin-bottom: auto;
 }
 
-.my-2 {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .ms-5 {
   margin-inline-start: 1.25rem;
-}
-
-.mb-0 {
-  margin-bottom: 0;
 }
 
 .block {
@@ -364,16 +355,12 @@ img, video {
   width: 300px;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .cursor-pointer {
@@ -443,20 +430,6 @@ img, video {
   border-color: rgb(163 230 53 / var(--tw-border-opacity));
 }
 
-.border-s-violet-100 {
-  --tw-border-opacity: 1;
-  border-inline-start-color: rgb(237 233 254 / var(--tw-border-opacity));
-}
-
-.border-b-gray-700 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
-.border-opacity-85 {
-  --tw-border-opacity: .85;
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -487,6 +460,11 @@ img, video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
+.bg-sky-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -507,16 +485,6 @@ img, video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-}
-
-.bg-sky-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
-}
-
 .p-1 {
   padding: .25rem;
 }
@@ -535,14 +503,6 @@ img, video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-3 {
-  padding: .75rem;
 }
 
 .px-3 {
@@ -687,11 +647,6 @@ img, video {
 
 .hover\:border:hover {
   border-width: 1px;
-}
-
-.hover\:bg-lime-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
 }
 
 .hover\:opacity-65:hover {

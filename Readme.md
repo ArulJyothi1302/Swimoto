@@ -99,17 +99,17 @@
 
 # BUNDLING <!-- most important thing for large scale appliation>
 
-# 1. Chunking
+ - # 1. Chunking
 
-# 2. Code Splitting
+ - # 2. Code Splitting
 
-# 3. Dynamic Bundling
+ - # 3. Dynamic Bundling
 
-# 4. Lazy Loading --> Loads the code in background in js when we visit the specific component in our app for better performance
+ - # 4. Lazy Loading --> Loads the code in background in js when we visit the specific component in our app for better performance
 
-# on demand Loading
+ - # on demand Loading
 
-# dynamic import
+ - # dynamic import
 
 # Redux
 
@@ -122,3 +122,14 @@
 - Build our Slice (card slice)
 - dispatch (action)
 - Read the data using selector
+b
+# Install React testing library
+ - Install jest library
+ - Install babel dependencies
+ - Configured babel.config.js
+ - Configure parcel config file to disable default babel transpilation
+ - jest npx init
+ - install jsdom lib separately
+ - install babel/preset-react to work jsx in testcases
+ - include in the babel config
+ - install @testing-library/jest-dom
