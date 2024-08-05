@@ -1,6 +1,7 @@
 const ContactUs = () => {
   return (
     <div className="Contact-form">
+      <h2 className="text-center p-4 m-4">Contact Us</h2>
       <form className="form w-[50%] mx-auto my-0 p-10 m-10">
         <fieldset className="bg-slate-400 p-4 m-4 rounded-xl">
           <div className="flex flex-wrap justify-between p-4 m-4">

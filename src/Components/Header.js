@@ -45,8 +45,8 @@ const Header = () => {
                 className="w-12 bg-slate-300 inline  rounded-xl"
                 src={CART_LOGO}
                 alt="cart"
-              ></img>{" "}
-              -{cartItems.length}
+              />{" "}
+              Cart-{cartItems.length}
             </Link>
           </li>
           <li className="px-4">

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import useOnlinestatus from "../utils/useOnlinestatus";
 import UserContext from "../utils/UserContext";
 import useReslist from "../utils/useReslist";
-
 const Body = () => {
   const { loggedInUser, setUserName } = useContext(UserContext);
   const { resList, loading, error } = useReslist();
@@ -33,7 +32,10 @@ const Body = () => {
 
   const onlinestatus = useOnlinestatus();
   if (!onlinestatus) {
-    return <h1>Hey you are offline... check connection</h1>;
+    return (<div className="flex flex-wrap justify-center items-center">
+     
+      <h1>Hey you are offline... check connection</h1>
+      </div>);
   }
 
   if (loading) return <Shimmer />;
