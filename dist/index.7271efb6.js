@@ -36083,6 +36083,7 @@ const Body = ()=>{
     ]);
     const Respromoted = (0, _restaurantCard.withVeg)((0, _restaurantCardDefault.default));
     const handleSearch = ()=>{
+        console.log(filterd.length);
         const searched = resList.filter((res)=>res.info.name.toLowerCase().includes(searchInput.toLowerCase()));
         setFiltered(searched);
     };
@@ -36090,7 +36091,6 @@ const Body = ()=>{
         const filteredTopRated = resList.filter((res)=>res.info.avgRating >= 4.3);
         setFiltered(filteredTopRated);
     };
-    console.log(resList);
     const onlinestatus = (0, _useOnlinestatusDefault.default)();
     if (!onlinestatus) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex flex-wrap justify-center items-center",
@@ -36098,17 +36098,17 @@ const Body = ()=>{
             children: "Hey you are offline... check connection"
         }, void 0, false, {
             fileName: "src/Components/Body.js",
-            lineNumber: 37,
+            lineNumber: 38,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/Components/Body.js",
-        lineNumber: 35,
+        lineNumber: 36,
         columnNumber: 13
     }, undefined);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/Components/Body.js",
-        lineNumber: 41,
+        lineNumber: 42,
         columnNumber: 23
     }, undefined);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36118,7 +36118,7 @@ const Body = ()=>{
         ]
     }, void 0, true, {
         fileName: "src/Components/Body.js",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 21
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36132,12 +36132,13 @@ const Body = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "text",
+                                "data-testid": "searchitems",
                                 className: " p-1.5 rounded-lg border border-solid border-black",
                                 value: searchInput,
                                 onChange: (e)=>setSearchInput(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/Components/Body.js",
-                                lineNumber: 49,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36146,29 +36147,30 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/Components/Body.js",
-                                lineNumber: 56,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Body.js",
-                        lineNumber: 48,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "m-4 p-4 ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            "data-testid": "top",
                             className: "filter-btn  p-2 bg-gray-400 rounded-lg",
                             onClick: handleFilterTopRated,
                             children: "Top Restaurants"
                         }, void 0, false, {
                             fileName: "src/Components/Body.js",
-                            lineNumber: 64,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Body.js",
-                        lineNumber: 63,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36178,7 +36180,7 @@ const Body = ()=>{
                                 children: "User:"
                             }, void 0, false, {
                                 fileName: "src/Components/Body.js",
-                                lineNumber: 72,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36187,19 +36189,19 @@ const Body = ()=>{
                                 onChange: (e)=>setUserName(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/Components/Body.js",
-                                lineNumber: 73,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Body.js",
-                        lineNumber: 71,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 47,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36212,31 +36214,31 @@ const Body = ()=>{
                                 resdata: resta
                             }, void 0, false, {
                                 fileName: "src/Components/Body.js",
-                                lineNumber: 90,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                                 resdata: resta
                             }, void 0, false, {
                                 fileName: "src/Components/Body.js",
-                                lineNumber: 92,
+                                lineNumber: 95,
                                 columnNumber: 15
                             }, undefined),
                             " "
                         ]
                     }, resta.info.id, true, {
                         fileName: "src/Components/Body.js",
-                        lineNumber: 87,
+                        lineNumber: 90,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 81,
+                lineNumber: 84,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Body.js",
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 5
     }, undefined);
 };
@@ -36281,6 +36283,7 @@ const RestaurantCard = (props)=>{
     const { resdata } = props;
     const { name, cuisines, avgRating, sla, cloudinaryImageId, costForTwo } = resdata?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        "data-testid": "res",
         className: "Res-Container w-[200px] m-4 p-4 rounded-xl transition   shadow hover:shadow-lg ease-in  delay-150",
         style: styleCard,
         children: [
@@ -36290,7 +36293,7 @@ const RestaurantCard = (props)=>{
                 alt: "dosa"
             }, void 0, false, {
                 fileName: "src/Components/RestaurantCard.js",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36301,28 +36304,28 @@ const RestaurantCard = (props)=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/Components/RestaurantCard.js",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
                         children: cuisines.length <= 3 ? cuisines.join(", ") : cuisines.slice(0, 2).join(", ") + "..."
                     }, void 0, false, {
                         fileName: "src/Components/RestaurantCard.js",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: avgRating
                     }, void 0, false, {
                         fileName: "src/Components/RestaurantCard.js",
-                        lineNumber: 25,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: costForTwo
                     }, void 0, false, {
                         fileName: "src/Components/RestaurantCard.js",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -36332,7 +36335,7 @@ const RestaurantCard = (props)=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/RestaurantCard.js",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -36340,13 +36343,13 @@ const RestaurantCard = (props)=>{
                         children: loggedInUser
                     }, void 0, false, {
                         fileName: "src/Components/RestaurantCard.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/RestaurantCard.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36367,20 +36370,20 @@ const withVeg = (RestaurantCard)=>{
                     children: "Veg"
                 }, void 0, false, {
                     fileName: "src/Components/RestaurantCard.js",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                     ...props
                 }, void 0, false, {
                     fileName: "src/Components/RestaurantCard.js",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/Components/RestaurantCard.js",
-            lineNumber: 37,
+            lineNumber: 38,
             columnNumber: 7
         }, undefined);
     };
@@ -37129,6 +37132,7 @@ const ItemList = ({ items, dummy })=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: items.map((i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                "data-testid": "resmenu",
                 className: "p-4 m-2 border-gray-400 border-b-2 text-left flex justify-between flex-wrap",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37141,7 +37145,7 @@ const ItemList = ({ items, dummy })=>{
                                     children: i?.card?.info?.name
                                 }, void 0, false, {
                                     fileName: "src/Components/Itemlist.js",
-                                    lineNumber: 21,
+                                    lineNumber: 22,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37153,7 +37157,7 @@ const ItemList = ({ items, dummy })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Itemlist.js",
-                                    lineNumber: 22,
+                                    lineNumber: 23,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37161,18 +37165,18 @@ const ItemList = ({ items, dummy })=>{
                                     children: i?.card?.info?.description
                                 }, void 0, false, {
                                     fileName: "src/Components/Itemlist.js",
-                                    lineNumber: 29,
+                                    lineNumber: 30,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Itemlist.js",
-                            lineNumber: 20,
+                            lineNumber: 21,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Itemlist.js",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37186,12 +37190,12 @@ const ItemList = ({ items, dummy })=>{
                                     children: "ADD +"
                                 }, void 0, false, {
                                     fileName: "src/Components/Itemlist.js",
-                                    lineNumber: 35,
+                                    lineNumber: 36,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Itemlist.js",
-                                lineNumber: 34,
+                                lineNumber: 35,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageFallbackDefault.default), {
@@ -37200,13 +37204,13 @@ const ItemList = ({ items, dummy })=>{
                                 className: "rounded-lg "
                             }, void 0, false, {
                                 fileName: "src/Components/Itemlist.js",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Itemlist.js",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, undefined)
                 ]

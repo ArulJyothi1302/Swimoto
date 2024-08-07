@@ -11,6 +11,7 @@ const RestaurantCard = (props) => {
     resdata?.info;
   return (
     <div
+      data-testid="res"
       className="Res-Container w-[200px] m-4 p-4 rounded-xl transition   shadow hover:shadow-lg ease-in  delay-150"
       style={styleCard}
     >

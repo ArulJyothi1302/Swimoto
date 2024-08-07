@@ -18,6 +18,7 @@ const Body = () => {
   const Respromoted = withVeg(RestaurantCard);
 
   const handleSearch = () => {
+    console.log(filterd.length)
     const searched = resList.filter((res) =>
       res.info.name.toLowerCase().includes(searchInput.toLowerCase())
     );
@@ -28,7 +29,7 @@ const Body = () => {
     const filteredTopRated = resList.filter((res) => res.info.avgRating >= 4.3);
     setFiltered(filteredTopRated);
   };
-  console.log(resList);
+  
 
   const onlinestatus = useOnlinestatus();
   if (!onlinestatus) {
@@ -48,6 +49,7 @@ const Body = () => {
         <div className=" m-4 p-4 ">
           <input
             type="text"
+            data-testid="searchitems"
             className=" p-1.5 rounded-lg border border-solid border-black"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
@@ -62,6 +64,7 @@ const Body = () => {
         </div>
         <div className="m-4 p-4 ">
           <button
+          data-testid="top"
             className="filter-btn  p-2 bg-gray-400 rounded-lg"
             onClick={handleFilterTopRated}
           >
