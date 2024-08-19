@@ -1,6 +1,11 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
 import Error from "./Components/Error";
@@ -10,6 +15,7 @@ import Shimmer from "./Components/Shimmer";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import Login from "./Components/Login";
 const Grocery = lazy(() => import("./Components/Grocery"));
 
 const About = lazy(() => import("./Components/About"));
@@ -24,13 +30,13 @@ const Main = () => {
     };
     setUserName(data.name);
   }, []);
-
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/";
   return (
     <Provider store={appStore}>
       <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
         <div className="Main">
-          <Header />
-
+          {!isLoginPage && <Header />}
           <Outlet />
         </div>
       </UserContext.Provider>
@@ -44,6 +50,10 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Login />,
+      },
+      {
+        path: "/browse",
         element: <Body />,
       },
       {
@@ -76,7 +86,7 @@ const appRouter = createBrowserRouter([
       },
       ,
       {
-        path: "/menu/:resid",
+        path: "/browse/menu/:resid",
         element: <ResMenu />,
       },
     ],

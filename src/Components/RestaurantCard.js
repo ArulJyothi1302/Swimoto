@@ -12,20 +12,20 @@ const RestaurantCard = (props) => {
   return (
     <div
       data-testid="res"
-      className="Res-Container w-[200px] m-4 p-4 rounded-xl transition   shadow hover:shadow-lg ease-in  delay-150"
+      className="Res-Container w-[220px] h-[450px] m-4 p-4 rounded-xl transition   shadow hover:shadow-lg ease-in  delay-150"
       style={styleCard}
     >
       <img
-        className="res-dish w-[150px] h-[150px] rounded-lg "
+        className="res-dish w-full h-[150px] rounded-lg "
         src={CDN_URL + cloudinaryImageId}
         alt="dosa"
       />
       <div className="text-gray-600 py-2 px-2s">
         <h3 className="font-bold text-md">{name}</h3>
-        <h5>{cuisines.length<=3?(cuisines.join(", ")):(cuisines.slice(0,2).join(", ")+"...")}</h5>
-        <h4>{avgRating}</h4>
-        <h4>{costForTwo}</h4>
-        <h4>{sla?.deliveryTime} Minutes</h4>
+        <h5 className="py-2">{cuisines.length<=3?(cuisines.join(", ")):(cuisines.slice(0,2).join(", ")+"...")}</h5>
+        <span className="inline-block p-1 rounded-lg text-center font-bold bg-green-500 px-1">⭐{avgRating}</span>
+        <span className="mx-3">{costForTwo}</span>
+        <h4 className="py-2">{sla?.deliveryTime} Minutes</h4>
         <h4 className="font-semibold">{loggedInUser}</h4>
       </div>
     </div>
