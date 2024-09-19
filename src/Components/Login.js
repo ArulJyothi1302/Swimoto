@@ -34,7 +34,7 @@ const Login = () => {
         src="https://i.pinimg.com/736x/e6/7d/af/e67daf68a6e8f6d4a9283cb7d64b098c.jpg"
         alt="login"
       />
-      <div className="absolute w-4/12 p-6 bg-black bg-opacity-70 flex justify-center">
+      <div className="absolute w-full md:w-4/12 p-6 bg-black bg-opacity-70 flex justify-center">
         <form
           className="px-4 py-4 m-4flex flex-col "
           onSubmit={(e) => e.preventDefault()}

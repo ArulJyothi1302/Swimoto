@@ -34690,7 +34690,7 @@ const Body = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-2",
+                        className: "p-4 flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-2",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 className: "text-center sm:text-left",
@@ -34722,7 +34722,7 @@ const Body = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card flex flex-wrap ",
+                className: "card flex flex-wrap justify-center ",
                 children: filterd.map((resta)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "menu/" + resta.info.id,
                         children: [
@@ -41309,7 +41309,7 @@ const Login = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute w-4/12 p-6 bg-black bg-opacity-70 flex justify-center",
+                className: "absolute w-full md:w-4/12 p-6 bg-black bg-opacity-70 flex justify-center",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                     className: "px-4 py-4 m-4flex flex-col ",
                     onSubmit: (e)=>e.preventDefault(),

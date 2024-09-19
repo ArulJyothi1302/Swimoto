@@ -74,7 +74,7 @@ const Body = () => {
           </button>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-2">
+        <div className="p-4 flex flex-col sm:flex-row items-center w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-2">
           <label className="text-center sm:text-left">User:</label>
           <input
             className="border rounded-lg bg-gray-300 p-2 outline-none w-full sm:w-64"
@@ -84,7 +84,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="card flex flex-wrap ">
+      <div className="card flex flex-wrap justify-center ">
         {/* Hardcoded not best practise */}
         {/* Keys are added to avoid rerendering coz React does not uniquely identifies element */}
 
