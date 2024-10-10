@@ -1,8 +1,9 @@
 import cart from "../images/cart.png";
 import emptycart from "../images/emptyCart.jpeg";
 import ImageError from "../images/ImageError.jpeg";
-
+import PagenotFound from "../images/Errorimg.webp";
 import NoInternet from "../images/nointernet.png";
+import GrocerySoon from "../images/Grocery.webp";
 export const CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
@@ -21,3 +22,5 @@ export const EMPTYCART = emptycart;
 export const CART_LOGO = cart;
 export const IMG_ERR = ImageError;
 export const NO_INT = NoInternet;
+export const ERR_IMG = PagenotFound;
+export const GROC_IMG = GrocerySoon;

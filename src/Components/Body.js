@@ -18,7 +18,6 @@ const Body = () => {
   const Respromoted = withVeg(RestaurantCard);
 
   const handleSearch = () => {
-    console.log(filterd.length);
     const searched = resList.filter((res) =>
       res.info.name.toLowerCase().includes(searchInput.toLowerCase())
     );

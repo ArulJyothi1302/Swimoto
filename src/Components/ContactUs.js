@@ -1,11 +1,14 @@
 const ContactUs = () => {
   return (
-    <div className="Contact-form">
-      <h2 className="text-center p-4 m-4">Contact Us</h2>
-      <form className="form w-[50%] mx-auto my-0 p-10 m-10">
+    <div className="Contact-form bg-gradient-to-r from-blue-950">
+      <h1 className="text-center font-bold p-4">Contact Us</h1>
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        className="form w-full md:w-[50%] mx-auto my-0 p-10 m-10"
+      >
         <fieldset className="bg-slate-400 p-4 m-4 rounded-xl">
           <div className="flex flex-wrap justify-between p-4 m-4">
-            <div className="w-6/12 p-2">
+            <div className="md:col-span-6 p-2">
               <input
                 className="w-full border border-black p-4 rounded-full "
                 type="text"
@@ -17,7 +20,7 @@ const ContactUs = () => {
                 placeholder="ph: +12 345-678-900"
               />
             </div>
-            <div className="w-6/12 p-2">
+            <div className="md:col-span-6 p-2">
               <input
                 className="w-full p-4 border border-black rounded-full"
                 type="text"
