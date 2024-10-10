@@ -5,15 +5,11 @@ import UserContext from "../utils/UserContext";
 class About extends React.Component {
   constructor(props) {
     super(props);
-    console.log("Parent Constructor");
   }
-  componentDidMount() {
-    console.log("Parent Mount");
-  }
+  componentDidMount() {}
   render() {
-    console.log("Parent render");
     return (
-      <div className="flex flex-col justify-center items-center p-4 m-4">
+      <div className=" flex flex-col justify-center h-screen items-center">
         <h3 className="font-bold">About Us!</h3>
         <h2 className="m-4">Fast Delivering Food App</h2>
         <div>
@@ -22,7 +18,7 @@ class About extends React.Component {
             {
               <UserContext.Consumer>
                 {({ loggedInUser }) => (
-                  <p className="px-4 font-semibold">{loggedInUser}</p>
+                  <span className="px-4 font-semibold">{loggedInUser}</span>
                 )}
               </UserContext.Consumer>
             }

@@ -614,19 +614,43 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 const Grocery = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Make Grocery Shopping here... Claim Exciting Prizes"
-        }, void 0, false, {
-            fileName: "src/Components/Grocery.js",
-            lineNumber: 4,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        className: "bg-green-600 h-screen",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-center text-lg font-bold p-4 ",
+                children: "Welcome to Grocery"
+            }, void 0, false, {
+                fileName: "src/Components/Grocery.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-center font-bold p-4 m-4",
+                children: "You Can Purchase Item Very Soon"
+            }, void 0, false, {
+                fileName: "src/Components/Grocery.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: " h-[400px] w-[400px] mx-auto p-10 rounded-xl",
+                src: (0, _constants.GROC_IMG),
+                alt: "image"
+            }, void 0, false, {
+                fileName: "src/Components/Grocery.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/Components/Grocery.js",
-        lineNumber: 3,
-        columnNumber: 9
+        lineNumber: 6,
+        columnNumber: 5
     }, undefined);
 };
 _c = Grocery;
@@ -639,6 +663,6 @@ $RefreshReg$(_c, "Grocery");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["2mnoL","1xC6H"], null, "parcelRequireec03")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"c7s09","../utils/constants":"hB8jg"}]},["2mnoL","1xC6H"], null, "parcelRequireec03")
 
 //# sourceMappingURL=Grocery.8992fa2f.js.map

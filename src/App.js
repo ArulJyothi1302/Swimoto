@@ -26,7 +26,7 @@ const Main = () => {
 
   useEffect(() => {
     const data = {
-      name: "Arul",
+      name: "User",
     };
     setUserName(data.name);
   }, []);

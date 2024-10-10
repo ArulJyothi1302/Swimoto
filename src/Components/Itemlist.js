@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import ImageFallback from "./ImageFallback";
 const ItemList = ({ items, dummy }) => {
   // Prop Drilled
-  console.log(dummy);
   const dispatch = useDispatch();
   const handleAdd = (i) => {
     dispatch(addItems(i));
@@ -13,7 +12,7 @@ const ItemList = ({ items, dummy }) => {
     <div>
       {items.map((i) => (
         <div
-        data-testid="resmenu"
+          data-testid="resmenu"
           key={i.card.info.id}
           className="p-4 m-2 border-gray-400 border-b-2 text-left flex justify-between flex-wrap"
         >
