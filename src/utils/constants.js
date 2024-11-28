@@ -14,10 +14,11 @@ export const LOGO_URL =
   "https://res.9appsinstall.com/group4/M01/9D/91/gRoGAFwk-WOAbzEOAAAqG9kPHqc646.png?x-oss-process=style/mq200";
 
 export const RES_MENU =
-  "https://cors-anywhere.herokuapp.com/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.0843007&lng=80.2704622&restaurantId=";
+  "https://cors-anywhere.herokuapp.com/" + `${process.env.REACT_APP_SWIG_API}`;
 
 export const RES_LIST =
-  "https://cors-anywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  "https://cors-anywhere.herokuapp.com/" +
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0843007&lng=80.2704622&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 export const EMPTYCART = emptycart;
 export const CART_LOGO = cart;
 export const IMG_ERR = ImageError;

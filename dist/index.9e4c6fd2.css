@@ -256,40 +256,6 @@ img, video {
   --tw-contain-style: ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (width >= 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (width >= 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (width >= 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (width >= 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (width >= 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -308,10 +274,6 @@ img, video {
 
 .m-auto {
   margin: auto;
-}
-
-.m-0 {
-  margin: 0;
 }
 
 .mx-10 {
@@ -407,14 +369,6 @@ img, video {
   height: 100vh;
 }
 
-.h-fit {
-  height: fit-content;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -439,24 +393,16 @@ img, video {
   width: 300px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-screen {
   width: 100vw;
-}
-
-.w-fit {
-  width: fit-content;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .cursor-pointer {
@@ -606,21 +552,6 @@ img, video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
-.bg-blue-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-70 {
   --tw-bg-opacity: .7;
 }
@@ -632,12 +563,6 @@ img, video {
 .from-blue-950 {
   --tw-gradient-from: #172554 var(--tw-gradient-from-position);
   --tw-gradient-to: #17255400 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-black {
-  --tw-gradient-from: #000 var(--tw-gradient-from-position);
-  --tw-gradient-to: #0000 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -663,10 +588,6 @@ img, video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-0 {
-  padding: 0;
 }
 
 .px-1 {
